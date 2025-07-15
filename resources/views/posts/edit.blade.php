@@ -27,7 +27,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Ruaj Ndryshimet</button>
-            <a href="{{ route('user.dashboard') }}" class="btn btn-secondary ms-2">Anulo</a>
+            <a href="{{ route('dashboard') }}" class="btn btn-secondary ms-2">Anulo</a>
         </form>
     </div>
 @endsection

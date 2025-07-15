@@ -19,6 +19,6 @@ class AiSuggestionController extends Controller
 
         // Mund ta ridrejtojmë tek dashboard me përgjigjen
         // Për ta ruajtur në sesion ose direkt me with()
-        return redirect()->route('user.dashboard')->with('ai_response', $ai_response);
+        return redirect()->route('dashboard')->with('ai_response', $ai_response);
     }
 }

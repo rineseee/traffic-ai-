@@ -56,7 +56,7 @@ class PostController extends Controller
         ]);
 
 
-        return redirect()->route('user.dashboard')->with('success', 'Raporti u krijua me sukses!');
+        return redirect()->route('dashboard')->with('success', 'Raporti u krijua me sukses!');
 
     }
 
@@ -90,7 +90,7 @@ class PostController extends Controller
             'content' => $request->content,
         ]);
 
-        return redirect()->route(Auth::user()->role === 'admin' ? 'admin.dashboard' : 'user.dashboard')
+        return redirect()->route(Auth::user()->role === 'admin' ? 'admin.dashboard' : 'dashboard')
             ->with('success', 'Postimi u përditësua me sukses!');
     }
 

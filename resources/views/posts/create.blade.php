@@ -70,7 +70,7 @@
         </div>
 
         <button type="submit" class="btn btn-success">Ruaj Raportin</button>
-        <a href="{{ route('user.dashboard') }}" class="btn btn-secondary ms-2">Anulo</a>
+        <a href="{{ route('dashboard') }}" class="btn btn-secondary ms-2">Anulo</a>
     </form>
 </div>
 @endsection
