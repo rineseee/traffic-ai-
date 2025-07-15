@@ -20,7 +20,7 @@ use App\Http\Controllers\AdminPostController;
 */
 
 Route::post('/chatbot/ask', [ChatbotController::class, 'ask']);
-Route::get('/dashboard', [UserController::class, 'dashboard'])->name('user.dashboard');
+Route::get('/dashboard', [UserController::class, 'dashboard'])->name('dashboard');
 Route::get('/', [TrafficController::class, 'index'])->name('home');
 Route::get('/search', [TrafficController::class, 'search'])->name('search');
 Route::post('/report', [TrafficController::class, 'storeUserReport'])->name('report.store');
